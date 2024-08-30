@@ -1,0 +1,27 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.upgrade-menu {
+  display: flex;
+  position: fixed;
+  top: 1svh;
+  right: 1svw;
+  height: 90svh;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1svh;
+}
+
+.upgrade-box {
+  width: 15svw;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+.cookie-total {
+  margin: 1svh;
+}
