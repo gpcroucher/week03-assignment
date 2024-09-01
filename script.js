@@ -129,5 +129,5 @@ function save() {
 function update() {
   cookieTotal += cookiesPerSecond;
   cookieTotalElement.innerText = cookieTotal;
-  CPSElement.innerText = cookiesPerSecond;
+  CPSElement.innerText = `Cookies per second: ${cookiesPerSecond}`;
 }

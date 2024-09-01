@@ -1,5 +1,6 @@
 body {
   background-color: antiquewhite;
+  font-family: "Trebuchet MS", "Tahoma", sans-serif;
 }
 
 p {
@@ -28,4 +29,42 @@ p {
 
 .cookie-total {
   margin: 1svh;
+}
+
+.cookie-button {
+  border: 0;
+  background-color: transparent;
+  margin: 5svh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.cookie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cookie-total-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cookie-total-container img {
+  height: 32px;
+  width: 32px;
+}
+
+.cookie-total-container,
+.CPS {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  /* todo */
 }
