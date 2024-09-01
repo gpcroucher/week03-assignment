@@ -39,7 +39,9 @@ function buyUpgrade(upgrade) {
   cookieTotal -= upgrade.cost;
 
   let ownedLabel = document.getElementById(`ownedLabel${upgrade.id}`);
-  ownedLabel.innerText = Number(ownedLabel.innerText) + 1;
+  // ownedLabel.innerText = Number(ownedLabel.innerText) + 1;
+
+  ownedLabel.innerText = `You have: ${upgradesBought[upgrade.id].count}`;
 
   console.log("Bought upgrade:", upgrade.name);
 }
@@ -84,9 +86,11 @@ async function getUpgrades(upgradesBoughtParam) {
     let ownedLabel = document.createElement("p");
     ownedLabel.id = `ownedLabel${upgrade.id}`;
     if (upgradesBoughtParam[upgrade.id]) {
-      ownedLabel.innerText = upgradesBoughtParam[upgrade.id].count;
+      ownedLabel.innerText = `You have: ${
+        upgradesBoughtParam[upgrade.id].count
+      }`;
     } else {
-      ownedLabel.innerText = 0;
+      ownedLabel.innerText = "You have: 0";
     }
 
     upgradeBox.appendChild(nameLabel);
